@@ -29,3 +29,119 @@ Las tarifas para los permisos municipales son las siguientes:
 
 #### Diagrama de Clases UML:
 ![GestionPermisosMunicipales.png](GestionPermisosMunicipales.png)
+
+
+
+
+
+
+####
+#### Resultado de pruebas realizadas en IntelliJ IDEA:
+[Permiso: 1223
+Fecha de emision: 09/04/2023
+Fecha de vecimiento: 09/04/2030
+Costo asociado: 100000.0
+Ciudadano: Nombre: Maria
+Apellido: Lopez
+Direccion: Calle 2
+
+Tipo de construccion: Comercial
+Metros cuadrados a construir: 200
+Ubicacion: calle falsa 123
+]
+[Permiso: 123
+Fecha de emision: 09/04/2023
+Fecha de vecimiento: 09/04/2030
+Costo asociado: 100000.0
+Ciudadano: Nombre: Juan
+Apellido: Perez
+Direccion: Calle 1
+
+Tipo de negocio: market
+Tamaño del local en metros cuadrados: 300
+Cantidad de empleados: 3
+, Permiso: 1223
+Fecha de emision: 09/04/2023
+Fecha de vecimiento: 09/04/2030
+Costo asociado: 100000.0
+Ciudadano: Nombre: Maria
+Apellido: Lopez
+Direccion: Calle 2
+
+Tipo de construccion: Comercial
+Metros cuadrados a construir: 200
+Ubicacion: calle falsa 123
+]
+[Permiso: 123
+Fecha de emision: 09/04/2023
+Fecha de vecimiento: 09/04/2030
+Costo asociado: 100000.0
+Ciudadano: Nombre: Juan
+Apellido: Perez
+Direccion: Calle 1
+
+Tipo de negocio: market
+Tamaño del local en metros cuadrados: 300
+Cantidad de empleados: 3
+, Permiso: 1223
+Fecha de emision: 09/04/2023
+Fecha de vecimiento: 09/04/2030
+Costo asociado: 100000.0
+Ciudadano: Nombre: Maria
+Apellido: Lopez
+Direccion: Calle 2
+
+Tipo de construccion: Comercial
+Metros cuadrados a construir: 200
+Ubicacion: calle falsa 123
+]
+[Permiso: 123
+Fecha de emision: 09/04/2023
+Fecha de vecimiento: 09/04/2030
+Costo asociado: 100000.0
+Ciudadano: Nombre: Juan
+Apellido: Perez
+Direccion: Calle 1
+
+Tipo de negocio: market
+Tamaño del local en metros cuadrados: 300
+Cantidad de empleados: 3
+]
+[Permiso: 1223
+Fecha de emision: 09/04/2023
+Fecha de vecimiento: 09/04/2030
+Costo asociado: 100000.0
+Ciudadano: Nombre: Maria
+Apellido: Lopez
+Direccion: Calle 2
+
+Tipo de construccion: Comercial
+Metros cuadrados a construir: 200
+Ubicacion: calle falsa 123
+]
+Permiso: 123
+Fecha de emision: 09/04/2023
+Fecha de vecimiento: 09/04/2030
+Costo asociado: 100000.0
+Ciudadano: Nombre: Juan
+Apellido: Perez
+Direccion: Calle 1
+
+Tipo de negocio: market
+Tamaño del local en metros cuadrados: 300
+Cantidad de empleados: 3
+Permiso: 123
+Fecha de emision: 09/04/2023
+Fecha de vecimiento: 09/04/2030
+Costo asociado: 100000.0
+Ciudadano: Nombre: Juan
+Apellido: Perez
+Direccion: Calle 1
+
+Tipo de negocio: market
+Tamaño del local en metros cuadrados: 300
+Cantidad de empleados: 3
+
+
+Process finished with exit code 0
+
