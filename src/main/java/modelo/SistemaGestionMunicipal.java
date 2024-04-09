@@ -57,7 +57,50 @@ public class SistemaGestionMunicipal {
         }
     }
 
-    // metodo buscar todos los permisos municipales de un ciudadano
+    // metodo buscar permiso por tipo, fecha de emision y fecha de vencimiento, si no se encuentra retorna un mensaje de no se encontro
+    // metodo buscar permiso por tipo
+    public ArrayList<Permiso> buscarPermisoPorTipo(String tipo) {
+        ArrayList<Permiso> permisosTipo = new ArrayList<Permiso>();
+        for (Permiso permiso : permisos) {
+            if (permiso.getTipo().equals(tipo)) {
+                permisosTipo.add(permiso);
+            }
+        }
+        if (permisosTipo.isEmpty()) {
+            System.out.println("No se encontraron permisos de tipo " + tipo);
+        }
+        return permisosTipo;
+    }
+
+    // metodo buscar permiso por fecha de emision
+    public ArrayList<Permiso> buscarPermisoPorFechaEmision(String fechaEmision) {
+        ArrayList<Permiso> permisosFechaEmision = new ArrayList<Permiso>();
+        for (Permiso permiso : permisos) {
+            if (permiso.getFechaEmision().equals(fechaEmision)) {
+                permisosFechaEmision.add(permiso);
+            }
+        }
+        if (permisosFechaEmision.isEmpty()) {
+            System.out.println("No se encontraron permisos con fecha de emision " + fechaEmision);
+        }
+        return permisosFechaEmision;
+    }
+
+    // metodo buscar permiso por fecha de vencimiento
+    public ArrayList<Permiso> buscarPermisoPorFechaVencimiento(String fechaVencimiento) {
+        ArrayList<Permiso> permisosFechaVencimiento = new ArrayList<Permiso>();
+        for (Permiso permiso : permisos) {
+            if (permiso.getFechaVecimiento().equals(fechaVencimiento)) {
+                permisosFechaVencimiento.add(permiso);
+            }
+        }
+        if (permisosFechaVencimiento.isEmpty()) {
+            System.out.println("No se encontraron permisos con fecha de vencimiento " + fechaVencimiento);
+        }
+        return permisosFechaVencimiento;
+    }
+
+    // metodo buscar todos los permisos municipales de un ciudadano si no existen retorna un mensaje de no se encontrado
     public ArrayList<Permiso> buscarPermisosMunicipalesPorCiudadano(Ciudadano ciudadano) {
         ArrayList<Permiso> permisosCiudadano = new ArrayList<Permiso>();
         for (Permiso permiso : permisos) {
@@ -65,8 +108,16 @@ public class SistemaGestionMunicipal {
                 permisosCiudadano.add(permiso);
             }
         }
+        if (permisosCiudadano.isEmpty()) {
+            System.out.println("No se encontraron permisos para el ciudadano");
+        }
         return permisosCiudadano;
     }
+
+    // metodo
+
+
+
 
 
 }

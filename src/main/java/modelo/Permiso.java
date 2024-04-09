@@ -4,30 +4,32 @@ import java.time.LocalDate;
 
 public abstract class Permiso {
     // atributos
-    private LocalDate fechaEmision, fechaVecimiento;
+    private String fechaEmision, fechaVecimiento;
     private double costoAsoaciado;
     private String identificadorUnico;
+    private Ciudadano ciudadano;
 
     // constructor
-    public Permiso(LocalDate fechaEmision, LocalDate fechaVecimiento, double costoAsoaciado, String identificadorUnico) {
+    public Permiso(String fechaEmision, String fechaVecimiento, double costoAsoaciado, String identificadorUnico, Ciudadano ciudadano) {
         this.fechaEmision = fechaEmision;
         this.fechaVecimiento = fechaVecimiento;
         this.costoAsoaciado = costoAsoaciado;
         this.identificadorUnico = identificadorUnico;
+        this.ciudadano = ciudadano;
     }
 
     // getters y setters
-    public LocalDate getFechaEmision() {
+    public String getFechaEmision() {
         return fechaEmision;
     }
-    public void setFechaEmision(LocalDate fechaEmision) {
+    public void setFechaEmision(String fechaEmision) {
         this.fechaEmision = fechaEmision;
     }
 
-    public LocalDate getFechaVecimiento() {
+    public String getFechaVecimiento() {
         return fechaVecimiento;
     }
-    public void setFechaVecimiento(LocalDate fechaVecimiento) {
+    public void setFechaVecimiento(String fechaVecimiento) {
         this.fechaVecimiento = fechaVecimiento;
     }
 
@@ -43,6 +45,13 @@ public abstract class Permiso {
     }
     public void setIdentificadorUnico(String identificadorUnico) {
         this.identificadorUnico = identificadorUnico;
+    }
+
+    public Ciudadano getCiudadano() {
+        return ciudadano;
+    }
+    public void setCiudadano(Ciudadano ciudadano) {
+        this.ciudadano = ciudadano;
     }
 
     // metodos
