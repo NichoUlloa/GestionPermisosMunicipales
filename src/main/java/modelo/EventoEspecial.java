@@ -9,8 +9,8 @@ public class EventoEspecial extends Permiso {
     private String medidasSeguridad;
 
     // constructor
-    public EventoEspecial(String tipoEvento, int cantidadEsperadaAsistentes, String medidasSeguridad, LocalDate fechaEmision, LocalDate fechaVecimiento, double costoAsoaciado, String identificadorUnico) {
-        super(fechaEmision, fechaVecimiento, costoAsoaciado, identificadorUnico);
+    public EventoEspecial(String tipoEvento, int cantidadEsperadaAsistentes, String medidasSeguridad, String fechaEmision, String fechaVecimiento, double costoAsoaciado, String identificadorUnico, Ciudadano ciudadano) {
+        super(fechaEmision, fechaVecimiento, costoAsoaciado, identificadorUnico, ciudadano);
         this.tipoEvento = tipoEvento;
         this.cantidadEsperadaAsistentes = cantidadEsperadaAsistentes;
         this.medidasSeguridad = medidasSeguridad;

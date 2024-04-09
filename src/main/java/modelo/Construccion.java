@@ -9,8 +9,8 @@ public class Construccion extends Permiso {
     private String ubicacion;
 
     // constructor
-    public Construccion(TipoConstruccion tipoConstruccion, int metrosCuadradosConstruir, String ubicacion, LocalDate fechaEmision, LocalDate fechaVecimiento, double costoAsoaciado, String identificadorUnico) {
-        super(fechaEmision, fechaVecimiento, costoAsoaciado, identificadorUnico);
+    public Construccion(TipoConstruccion tipoConstruccion, int metrosCuadradosConstruir, String ubicacion, String fechaEmision, String fechaVecimiento, double costoAsoaciado, String identificadorUnico, Ciudadano ciudadano) {
+        super(fechaEmision, fechaVecimiento, costoAsoaciado, identificadorUnico, ciudadano);
         this.tipoConstruccion = tipoConstruccion;
         this.metrosCuadradosConstruir = metrosCuadradosConstruir;
         this.ubicacion = ubicacion;

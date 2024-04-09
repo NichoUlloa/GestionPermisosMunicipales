@@ -9,8 +9,8 @@ public class Negocio extends Permiso {
     private int cantidadEmpleados;
 
     // constructor
-    public Negocio(String tipoNegocio, int tamanioLocalMetrosCuadrados, int cantidadEmpleados, LocalDate fechaEmision, LocalDate fechaVecimiento, double costoAsoaciado, String identificadorUnico) {
-        super(fechaEmision, fechaVecimiento, costoAsoaciado, identificadorUnico);
+    public Negocio(String tipoNegocio, int tamanioLocalMetrosCuadrados, int cantidadEmpleados, String fechaEmision, String fechaVecimiento, double costoAsoaciado, String identificadorUnico, Ciudadano ciudadano) {
+        super(fechaEmision, fechaVecimiento, costoAsoaciado, identificadorUnico, ciudadano);
         this.tipoNegocio = tipoNegocio;
         this.tamanioLocalMetrosCuadrados = tamanioLocalMetrosCuadrados;
         this.cantidadEmpleados = cantidadEmpleados;
