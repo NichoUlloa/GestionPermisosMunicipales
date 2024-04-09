@@ -54,8 +54,6 @@ public abstract class Permiso {
         this.ciudadano = ciudadano;
     }
 
-    // metodos
-
     // metodo abstracto getTipo
     public abstract String getTipo();
 
@@ -72,8 +70,4 @@ public abstract class Permiso {
                 "Costo asociado: " + costoAsoaciado + "\n" +
                 "Ciudadano: " + ciudadano + "\n";
     }
-
-
-
-
 }

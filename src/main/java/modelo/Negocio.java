@@ -38,15 +38,11 @@ public class Negocio extends Permiso {
         this.cantidadEmpleados = cantidadEmpleados;
     }
 
-    // metodos
-
     // metodo getTipo
     public String getTipo() {
         return "Negocio";
     }
 
-    // Calcular costo permiso negocio: costo base + (tamaño de local en metros cuadrados * tarifa por metro cuadrado) + (cantidad de empleados * tarifa por empleado)
-    // metodo calcularCosto
     public double calcularCosto() {
         return getCostoAsoaciado() + (tamanioLocalMetrosCuadrados * 150000) + (cantidadEmpleados * 20000);
     }

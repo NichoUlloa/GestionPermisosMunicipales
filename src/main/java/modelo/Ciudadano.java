@@ -39,6 +39,4 @@ public class Ciudadano {
                 "Apellido: " + apellidoCiudadano + "\n" +
                 "Direccion: " + direccionCiudadano + "\n";
     }
-
-
 }
