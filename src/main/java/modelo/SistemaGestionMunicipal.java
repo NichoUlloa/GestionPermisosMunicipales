@@ -38,8 +38,6 @@ public class SistemaGestionMunicipal {
     }
 
     // metodos
-
-    //metodo registrar ciudadano, si ya esta registrado no se puede registrar y entrwga un mensaje de ya registrado
     public void registrarCiudadano(Ciudadano ciudadano) {
         if (!ciudadanos.contains(ciudadano)) {
             ciudadanos.add(ciudadano);
@@ -48,7 +46,6 @@ public class SistemaGestionMunicipal {
         }
     }
 
-    //metodo registrar permisos municipales, si el identificador unique ya esta registrado no se puede registrar y entrega un mensaje de ya registrado. el permiso se registra en catalogoPermisosRealizados;
     public void registrarPermisoMunicipal(Permiso permiso) {
         if (!permisos.contains(permiso)) {
             permisos.add(permiso);
@@ -58,8 +55,6 @@ public class SistemaGestionMunicipal {
         }
     }
 
-    // metodo buscar permiso por tipo, fecha de emision y fecha de vencimiento, si no se encuentra retorna un mensaje de no se encontro
-    // metodo buscar permiso por tipo
     public ArrayList<Permiso> buscarPermisoPorTipo(String tipo) {
         ArrayList<Permiso> permisosTipo = new ArrayList<Permiso>();
         for (Permiso permiso : permisos) {
@@ -73,7 +68,6 @@ public class SistemaGestionMunicipal {
         return permisosTipo;
     }
 
-    // metodo buscar permiso por fecha de emision
     public ArrayList<Permiso> buscarPermisoPorFechaEmision(String fechaEmision) {
         ArrayList<Permiso> permisosFechaEmision = new ArrayList<Permiso>();
         for (Permiso permiso : permisos) {
@@ -87,7 +81,6 @@ public class SistemaGestionMunicipal {
         return permisosFechaEmision;
     }
 
-    // metodo buscar permiso por fecha de vencimiento
     public ArrayList<Permiso> buscarPermisoPorFechaVencimiento(String fechaVencimiento) {
         ArrayList<Permiso> permisosFechaVencimiento = new ArrayList<Permiso>();
         for (Permiso permiso : permisos) {
@@ -101,7 +94,6 @@ public class SistemaGestionMunicipal {
         return permisosFechaVencimiento;
     }
 
-    // metodo buscar todos los permisos municipales de un ciudadano si no existen retorna un mensaje de no se encontrado
     public ArrayList<Permiso> buscarPermisosMunicipalesPorCiudadano(Ciudadano ciudadano) {
         ArrayList<Permiso> permisosCiudadano = new ArrayList<Permiso>();
         for (Permiso permiso : permisos) {
@@ -115,7 +107,6 @@ public class SistemaGestionMunicipal {
         return permisosCiudadano;
     }
 
-    // metodo obtener informacion completa de un permiso municipal dependiendo del tipo, ya sea de negocio, construccion o evento especial, debes entregar los datos de la clase permiso y los datos de la clase hija, podrias comparar con un if
     public String obtenerInformacionCompletaPermisoMunicipal(Permiso permiso) {
         if (permiso instanceof Negocio) {
             return permiso.toString() + ((Negocio) permiso).toString();
@@ -127,10 +118,4 @@ public class SistemaGestionMunicipal {
             return "No se encontro informacion completa del permiso";
         }
     }
-
-
-
-
-
-
 }
