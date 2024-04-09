@@ -1,5 +1,7 @@
 package modelo;
 
+import java.time.LocalDate;
+
 public class Negocio extends Permiso {
     // atributos
     private String tipoNegocio;
@@ -7,9 +9,10 @@ public class Negocio extends Permiso {
     private int cantidadEmpleados;
 
     // constructor
-    public Negocio(String tipoNegocio, int tamanioLocal, int cantidadEmpleados) {
+    public Negocio(String tipoNegocio, int tamanioLocalMetrosCuadrados, int cantidadEmpleados, LocalDate fechaEmision, LocalDate fechaVecimiento, double costoAsoaciado, String identificadorUnico) {
+        super(fechaEmision, fechaVecimiento, costoAsoaciado, identificadorUnico);
         this.tipoNegocio = tipoNegocio;
-        this.tamanioLocalMetrosCuadrados = tamanioLocal;
+        this.tamanioLocalMetrosCuadrados = tamanioLocalMetrosCuadrados;
         this.cantidadEmpleados = cantidadEmpleados;
     }
 
@@ -42,13 +45,17 @@ public class Negocio extends Permiso {
         return "Negocio";
     }
 
-
     // Calcular costo permiso negocio: costo base + (tamaño de local en metros cuadrados * tarifa por metro cuadrado) + (cantidad de empleados * tarifa por empleado)
     // metodo calcularCosto
     public double calcularCosto() {
         return getCostoAsoaciado() + (tamanioLocalMetrosCuadrados * 150000) + (cantidadEmpleados * 20000);
     }
 
-
-
+    @Override
+    public String toString() {
+        return super.toString() +
+                "Tipo de negocio: " + tipoNegocio + "\n" +
+                "Tamaño del local en metros cuadrados: " + tamanioLocalMetrosCuadrados + "\n" +
+                "Cantidad de empleados: " + cantidadEmpleados + "\n";
+    }
 }
