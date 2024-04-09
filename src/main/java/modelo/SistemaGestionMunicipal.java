@@ -48,10 +48,11 @@ public class SistemaGestionMunicipal {
         }
     }
 
-    //metodo registrar permisos municipales, si el identificador unique ya esta registrado no se puede registrar y entrega un mensaje de ya registrado
+    //metodo registrar permisos municipales, si el identificador unique ya esta registrado no se puede registrar y entrega un mensaje de ya registrado. el permiso se registra en catalogoPermisosRealizados;
     public void registrarPermisoMunicipal(Permiso permiso) {
         if (!permisos.contains(permiso)) {
             permisos.add(permiso);
+            municipalidad.getCatalogoPermisosRealizados().add(permiso);
         } else {
             System.out.println("El permiso ya esta registrado");
         }
@@ -114,7 +115,19 @@ public class SistemaGestionMunicipal {
         return permisosCiudadano;
     }
 
-    // metodo
+    // metodo obtener informacion completa de un permiso municipal dependiendo del tipo, ya sea de negocio, construccion o evento especial, debes entregar los datos de la clase permiso y los datos de la clase hija, podrias comparar con un if
+    public String obtenerInformacionCompletaPermisoMunicipal(Permiso permiso) {
+        if (permiso instanceof Negocio) {
+            return permiso.toString() + ((Negocio) permiso).toString();
+        } else if (permiso instanceof Construccion) {
+            return permiso.toString() + ((Construccion) permiso).toString();
+        } else if (permiso instanceof EventoEspecial) {
+            return permiso.toString() + ((EventoEspecial) permiso).toString();
+        } else {
+            return "No se encontro informacion completa del permiso";
+        }
+    }
+
 
 
 

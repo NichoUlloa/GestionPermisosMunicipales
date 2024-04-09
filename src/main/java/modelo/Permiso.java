@@ -64,6 +64,14 @@ public abstract class Permiso {
 
 
     // toString
+    @Override
+    public String toString() {
+        return "Permiso: " + identificadorUnico + "\n" +
+                "Fecha de emision: " + fechaEmision + "\n" +
+                "Fecha de vecimiento: " + fechaVecimiento + "\n" +
+                "Costo asociado: " + costoAsoaciado + "\n" +
+                "Ciudadano: " + ciudadano + "\n";
+    }
 
 
 
